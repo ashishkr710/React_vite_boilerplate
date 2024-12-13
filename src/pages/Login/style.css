@@ -1,0 +1,30 @@
+.forget-div {
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+.privacy-div {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.forget-div a {
+    color: var(--primary);
+    text-decoration: none;
+}
+.privacy-div a {
+    color: var(--primary);
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    color: #979191;
+}
+.logo-welcome {
+    text-align: center;
+}

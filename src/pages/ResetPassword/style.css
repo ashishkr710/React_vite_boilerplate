@@ -1,0 +1,8 @@
+
+input#otp {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    margin: 8px 0px; 
+}

@@ -1,0 +1,261 @@
+@import url('../Assets/Variable.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto';
+    background-color: var(--body-bg);
+}
+.main-layout {
+    display: flex;
+    height: calc(100vh - 97px);
+}
+.right-wrap {
+    width: 100%;
+    overflow: auto;
+}
+
+.error-text {
+    color: red;
+}
+
+.btn-wrap {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--primary);
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    color: var(--light-color);
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+button.primary-btn {
+    padding: 12px 28px !important;
+    background-color: var(--primary) !important;
+    border: none !important;
+    color: var(--light-color) !important;
+    transition: 0.5s;
+}
+button.primary-btn:hover:not(:disabled) {
+    background-color: var(--hover-color) !important;
+}
+
+button.secondary-btn {
+    padding: 12px 28px !important;
+    background-color: transparent !important;
+    border: 1px solid var(--secondary) !important;
+    color: var(--secondary) !important;
+    transition: 0.5s;
+}
+button.secondary-btn:hover:not(:disabled) {
+    background-color: var(--secondary) !important;
+    color: var(--light-color) !important;
+}
+
+button.custom-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button.custom-btn:disabled {
+    opacity: 0.6;
+}
+
+.field-wrap .password-info {
+    position: relative;
+}
+.eye-icon {
+    position: absolute !important;
+    right: 1%;
+    bottom: 15%;
+}
+
+.new-icon {
+    margin-top: 10px;
+}
+
+/* table styling */
+
+.table-wrap table td {
+    padding: 17px 18px;
+    color: var(--heading-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.table-wrap table {
+    width: 100%;
+    background-color: var(--light-color);
+    text-align: center;
+    border-radius: 4px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* pagination styling */
+
+/*.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root {
+    color: var(--secondary) !important;
+}
+.css-1ygcj2i-MuiTableCell-root {
+    text-align: center;
+    background-color: var(--table-head-bg) !important;
+    border-radius: 4px;
+}*/
+.action-wrap {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.view-btn svg,
+.edit-btn svg,
+.delete-btn svg {
+    color: var(--light-color);
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.view-btn svg {
+    background: var(--secondary);
+}
+.edit-btn svg {
+    background: #35c0e4;
+}
+.delete-btn svg {
+    background: #ff0000;
+}
+
+/* upload button styling */
+.upload-div > label {
+    background: none;
+    color: #666666;
+    width: 200px;
+    border: 1px solid #666666;
+    box-shadow: none;
+    transition: 0.4s;
+}
+.upload-div > label:active {
+    box-shadow: none !important;
+}
+
+.upload-div > label:hover {
+    -webkit-text-decoration: none;
+    text-decoration: none !important;
+    background-color: #43d79e !important;
+    border: 1px solid #43d79e;
+    color: #fff;
+    box-shadow: none !important;
+    transition: 0.4s;
+}
+
+footer {
+    text-align: center;
+    font-size: 16px;
+    background: var(--heading-color);
+    padding: 10px;
+    color: var(--light-color);
+}
+
+.heading-dashboard {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.field-wrap input,
+.field-wrap textarea {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+.field-wrap input:hover,
+.field-wrap select:hover,
+.field-wrap textarea:hover {
+    border: 1px solid black;
+    transition: 0.5s;
+}
+.react-tel-input:hover {
+    border: 1px solid #000 !important;
+    transition: 0.5s;
+}
+
+.field-wrap select {
+    position: relative;
+    width: 100%;
+    padding: 19px;
+    border-radius: 4px;
+    margin-top: 8px;
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+.field-wrap select option {
+    background-color: #f9fafb; /* Option background color */
+    color: #333; /* Option text color */
+    padding: 8px; /* Add padding for readability */
+}
+
+/* Optional: Different color for hovered option */
+.field-wrap select option:hover {
+    background-color: #e0f7fa;
+    color: #00796b;
+}
+
+input#firstName {
+    margin-top: 8px;
+}
+input#lastName {
+    margin-top: 8px;
+}
+.custom-date-selector fieldset {
+    border: 0px solid transparent !important;
+}
+.main-fields {
+    align-items: flex-start !important;
+}
+.react-tel-input {
+    margin-top: 8px;
+}
+.react-tel-input .flag-dropdown {
+    background-color: transparent !important;
+    border: 1px solid #ecf1f3 !important;
+}
+select {
+    background: transparent;
+}
+
+@media (max-width: 567px) {
+    .field-wrap label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .eye-icon {
+        position: absolute !important;
+        left: 90%;
+        bottom: 17%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .eye-icon {
+        position: absolute !important;
+        left: 85%;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,118 @@
+.main-sidebar-div {
+    background-color: var(--light-color);
+    width: fit-content;
+    height: 100%;
+    transition: all 0.4s;
+    z-index: 2;
+    border-top: 1px solid var(--border-color);
+    position: relative;
+}
+.outer-wrapper {
+    height: 100%;
+}
+.listItem {
+    margin-top: 30px;
+    flex-grow: 1;
+}
+.toggle-icon-div {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    border-radius: 50%;
+    display: flex;
+}
+.toggle-icon-div:hover {
+    background-color: var(--secondary);
+    color: aliceblue;
+}
+
+.inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.listItem ul li {
+    list-style: none;
+    transition: 0.5s;
+    border-left: 2px solid transparent;
+}
+
+.listItem ul li:hover {
+    background-color: var(--hover-bg);
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+.listItem ul li:hover svg,
+.listItem ul li.active svg {
+    stroke: var(--secondary);
+    fill: var(--secondary);
+}
+
+.listItem ul li a {
+    text-decoration: none;
+    color: var(--heading-color);
+    display: flex;
+    align-items: center;
+    padding: 16px 10px;
+}
+.listItem ul li a:hover,
+.listItem ul li a.active {
+    color: var(--secondary);
+}
+.listItem ul li a p {
+    margin-left: 10px;
+}
+.sidebar-footer {
+    margin-bottom: 10px;
+}
+.sidebar-footer ul li {
+    list-style: none;
+    padding: 16px 10px;
+    transition: 0.5s;
+    border-left: 2px solid transparent;
+}
+.sidebar-footer ul li:hover svg {
+    stroke: var(--secondary);
+    fill: var(--secondary);
+}
+
+.sidebar-footer ul li a {
+    text-decoration: none;
+    color: var(--heading-color);
+    display: flex;
+    align-items: center;
+}
+.sidebar-footer ul li a p {
+    margin-left: 10px;
+}
+
+.sidebar-footer li:hover {
+    background-color: var(--hover-bg);
+    border-color: var(--secondary);
+}
+.footer-ul ul li a:hover {
+    color: var(--secondary);
+}
+.footer-ul {
+    padding: 0px 50px;
+    transition: 0.5s;
+}
+.main-sidebar-div.show {
+    display: block;
+    border-right: 1px solid var(--border-color);
+}
+.toggle-icon-div .menu-icon {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-sidebar-div {
+        display: none;
+    }
+    .toggle-icon-div .menu-icon {
+        display: none !important;
+    }
+}

@@ -1,0 +1,17 @@
+.pagination-wrap {
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: auto;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 567px) {
+    .pagination-wrap {
+        padding: 4px;
+        width: 140px;
+    }
+}

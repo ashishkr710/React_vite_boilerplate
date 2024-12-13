@@ -1,0 +1,39 @@
+:root {
+    --primary: #35C0E4;
+    --secondary:#43D79E;
+    --body-bg:#ECF1F3;
+    --heading-color: #232A2E;
+    --sub-heading:#181C32;
+    --light-color:#ffffff;
+    --border-color:#ECF1F3;
+    --search-border:#666666;
+    --light-text:#161C24;
+    --hover-bg: #f4fffb;
+    --card-text:#737A7D;
+    --table-head-bg:#f5f5f5;
+    --schedule-bg:#FFF9E4;
+    --link-bg:#2E71F4;
+    --profile-text:#737A7D;
+    --hover-color:#2a99b6;
+    --subheading-color:#1C1C1C;
+    --profile-input-bg:#F5F5F5;
+    --dark-text:#000000;
+    --chat-bg:#F4F4F7;
+    --chat-reply-bg:#43D79E;
+    --input-bg:#FAFAFA;
+
+   
+}  
+    
+/* font-size */
+
+:root {
+    --main-login-heading:35px;
+    --main-heading:20px;
+    --signup-heading:28px;
+    --heading-size: 18px;   
+    --para-size: 16px;
+    --sub-text:14px;
+    --light-text:12px;
+    --big-heading-size:35px; 
+}  

@@ -1,0 +1,16 @@
+.auth-form {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 25px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper h1 {
+    color: black;
+    font-size: 90px;
+}

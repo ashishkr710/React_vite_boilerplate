@@ -1,0 +1,192 @@
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+/*.main-view-div {
+    margin-top: 30px;
+    padding: 0px 60px;
+}*/
+.view-heading h4 {
+    font-size: var(--heading-size);
+    color: var(--heading-color);
+    margin-bottom: 20px;
+}
+.view-details {
+    padding: 20px 35px;
+    background-color: var(--light-color);
+    border-radius: 4px;
+}
+.profle-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 25px;
+}
+.profle-wrapper h6 {
+    font-size: var(--para-size);
+    color: var(--heading-color);
+    margin-bottom: 10px;
+}
+.profle-wrapper p {
+    font-size: var(--sub-text);
+    color: var(--subheading-color);
+}
+.doctor-profile-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inner-upload-profile {
+    position: relative;
+}
+.profile-upload-btn {
+    position: absolute !important;
+    right: 0 !important;
+    bottom: 10px !important;
+    border: 1px solid var(--secondary) !important;
+    background-color: var(--light-color) !important;
+    border-radius: 50% !important;
+    min-width: 40px !important;
+    height: 40px !important;
+    padding: 7px !important;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1) !important;
+}
+.profile-upload-btn:hover {
+    background-color: var(--light-color) !important;
+    box-shadow: 0 0 10px 2px rgba(67, 215, 158, 0.5) !important;
+}
+.profile-upload-btn > span {
+    margin: 0 !important;
+}
+.add-staff-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.text-end {
+    margin-right: 30px;
+    text-align: end;
+}
+.profile-edit-btn .edit-btn {
+    background-color: var(--primary) !important;
+    padding: 16px 30px !important;
+    color: var(--light-color) !important;
+    font-weight: 600;
+    font-size: var(--heading-size);
+    transition: 0.5s;
+}
+.profile-edit-btn .edit-btn:hover {
+    background-color: var(--hover-color) !important;
+}
+
+.profile-inner-wrapper {
+    background-color: var(--profile-input-bg);
+    padding: 17px 24px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.profile-inputs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.name-fields {
+    width: 33%;
+    gap: 4px;
+}
+.name-fields h4 {
+    font-weight: 450;
+}
+.name-fields p {
+    font-weight: 600;
+    color: var(--profile-text);
+}
+.profile-inputs {
+    margin-bottom: 20px;
+}
+.address-fields h4 {
+    font-size: var(--para-size);
+    color: var(--sub-heading);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.insurance-link a {
+    text-decoration: none;
+    color: var(--primary);
+    cursor: pointer;
+    font-weight: 30px;
+}
+.address-fields {
+    color: var(--profile-text);
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.fixed-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--secondary) !important;
+}
+
+/* media query  */
+
+@media screen and (max-width: 1350px) {
+    .name-fields {
+        width: 50%;
+        gap: 4px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .name-fields {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .profile-edit-btn .edit-btn {
+        padding: 11px 20px !important;
+    }
+    .view-details {
+        padding: 20px 20px;
+    }
+    .profile-inner-wrapper {
+        padding: 7px 20px;
+    }
+}
+
+@media screen and (max-width: 647px) {
+    .doctor-profile-div {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .profile-edit-btn {
+        display: flex;
+        margin-top: 10px;
+    }
+    .profile-edit-btn .edit-btn {
+        padding: 6px 15px !important;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .profle-wrapper {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .profile-edit-btn {
+        display: flex;
+        margin-top: 0px;
+    }
+    .doctor-profile-div {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}

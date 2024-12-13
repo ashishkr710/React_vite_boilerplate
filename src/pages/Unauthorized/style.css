@@ -1,0 +1,40 @@
+.authorized-icon {
+    width: 5%;
+}
+.back-btn {
+    display: flex;
+}
+.author-main-btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+.authorize-section {
+    margin: 0 auto;
+    width: 900px;
+}
+.heading-authorize {
+    font-size: 24px;
+    margin: 8px 0px;
+}
+.text-authorize {
+    margin: 15px 0px;
+}
+.main-author-div {
+    width: 100%;
+    padding: 20px;
+    margin-top: 30px;
+    border: 1.5px solid #666666;
+    border-radius: 12px;
+    text-align: center;
+}
+
+button.back-btn {
+    padding: 12px 20px;
+}
+button.home-btn {
+    padding: 12px 20px;
+}

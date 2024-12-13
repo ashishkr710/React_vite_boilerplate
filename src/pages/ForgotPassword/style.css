@@ -1,0 +1,10 @@
+.back-login {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.back-login a {
+    color: var(--primary);
+    text-decoration: none;
+}
